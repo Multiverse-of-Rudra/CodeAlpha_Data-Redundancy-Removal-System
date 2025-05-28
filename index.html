@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head><title>Data Submission</title></head>
+<body>
+  <h1>Submit Data</h1>
+  <form action="/submit" method="post">
+    <textarea name="data"></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+  }
+  form {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px 25px 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+    font-size: 1rem;
+    resize: vertical;
+    transition: border 0.2s;
+  }
+  textarea:focus {
+    border: 1.5px solid #4a90e2;
+    outline: none;
+  }
+  button[type="submit"] {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  button[type="submit"]:hover {
+    background: #357ab8;
+  }
+</style>
